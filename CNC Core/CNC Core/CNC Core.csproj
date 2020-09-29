@@ -43,10 +43,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="websocket-sharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\websocket-sharp\websocket-sharp\bin\Release\websocket-sharp.dll</HintPath>
-    </Reference>
+    <!-- <Reference Include="websocket-sharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"> -->
+      <!-- <SpecificVersion>False</SpecificVersion> -->
+      <!-- <HintPath>..\..\websocket-sharp\websocket-sharp\bin\Release\websocket-sharp.dll</HintPath> -->
+    <!-- </Reference> -->
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
@@ -68,6 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HelperClasses.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="WebSocketSharp-netstandard">
+      <Version>1.0.1</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
